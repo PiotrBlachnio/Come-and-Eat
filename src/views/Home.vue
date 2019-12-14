@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Nav />
+    <Nav v-bind:current='current' />
   </div>
 </template>
 
@@ -11,6 +11,11 @@ export default {
   name: 'home',
   components: {
     Nav,
+  },
+  data() {
+    return {
+      current: 'home'
+    }
   },
 };
 </script>

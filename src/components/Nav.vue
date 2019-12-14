@@ -5,23 +5,23 @@
                 <b-img width=270px height=52px src="https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/logo-1.png" class='mt-3 logo'></b-img>
             </router-link>
             
-            <b-nav-item class='ml-auto item mt-4' to='home'>
+            <b-nav-item class='ml-auto item mt-4 md' to='home' :class="{'active':current=='home'}">
                     Home
             </b-nav-item>    
 
-            <b-nav-item class='item mt-4' to='about'>
+            <b-nav-item class='item mt-4' to='about' :class="{'active':current==='about'}">
                     About
             </b-nav-item>  
 
-            <b-nav-item class='item mt-4' to='menu'>
+            <b-nav-item class='item mt-4' to='menu' :class="{'active':current==='menu'}">
                     Menu
             </b-nav-item>
 
-            <b-nav-item class='item mt-4' to='gallery'>
+            <b-nav-item class='item mt-4' to='gallery' :class="{'active':current==='gallery'}">
                     Gallery
             </b-nav-item>  
 
-            <b-nav-item class='item mt-4 last-link' to='contact'>
+            <b-nav-item class='item mt-4 last-link' to='contact' :class="{'active':current==='contact'}">
                     Contact
             </b-nav-item>    
         </b-nav>
@@ -31,6 +31,7 @@
 <script>
 export default {
   name: 'Nav',
+  props: ['current'],
 };
 </script>
 
@@ -39,6 +40,10 @@ export default {
     .nav {
         background-color: #f3f5f7;
         height: 80px;
+    }
+
+    .item {
+        padding: 3px;
     }
 
     .item .nav-link {
@@ -56,7 +61,7 @@ export default {
         cursor: default;
     }
 
-    .item .nav-link:hover {
+    .item .nav-link:hover, .active .nav-link {
         border-bottom: 3px solid #e44249;
         text-decoration: none;
         cursor: pointer;
@@ -73,5 +78,5 @@ export default {
     .logo:hover {
         cursor: pointer;
     }
-    
+
 </style>
