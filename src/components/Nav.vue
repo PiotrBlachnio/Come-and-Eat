@@ -5,34 +5,24 @@
                 <b-img width=270px height=52px src="https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/logo-1.png" class='mt-3 logo'></b-img>
             </router-link>
             
-            <b-nav-item class='ml-auto item mt-4'>
-                <router-link to='home'>
+            <b-nav-item class='ml-auto item mt-4' to='home'>
                     Home
-                </router-link>
             </b-nav-item>    
 
-            <b-nav-item class='item mt-4'>
-                <router-link to='about'>
+            <b-nav-item class='item mt-4' to='about'>
                     About
-                </router-link>
             </b-nav-item>  
 
-            <b-nav-item class='item mt-4'>
-                <router-link to='menu'>
+            <b-nav-item class='item mt-4' to='menu'>
                     Menu
-                </router-link>
             </b-nav-item>
 
-            <b-nav-item class='item mt-4'>
-                <router-link to='gallery'>
+            <b-nav-item class='item mt-4' to='gallery'>
                     Gallery
-                </router-link>
             </b-nav-item>  
 
-            <b-nav-item class='item mt-4 last-link'>
-                <router-link to='contact'>
+            <b-nav-item class='item mt-4 last-link' to='contact'>
                     Contact
-                </router-link>
             </b-nav-item>    
         </b-nav>
     </div> 
@@ -51,7 +41,7 @@ export default {
         height: 80px;
     }
 
-    .item .nav-link a {
+    .item .nav-link {
         color: #25292d;
         font-size: 16px;
         font-family: 'Rubik', sans-serif;
@@ -66,9 +56,10 @@ export default {
         cursor: default;
     }
 
-    .item .nav-link a:hover {
+    .item .nav-link:hover {
         border-bottom: 3px solid #e44249;
         text-decoration: none;
+        cursor: pointer;
     }
 
     .last-link .nav-link{
