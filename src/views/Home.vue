@@ -1,12 +1,16 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
+    <Nav />
   </div>
 </template>
 
 <script>
+import Nav from '../components/Nav.vue';
 
 export default {
   name: 'home',
+  components: {
+    Nav,
+  },
 };
 </script>
