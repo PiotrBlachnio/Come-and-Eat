@@ -44,10 +44,19 @@ export default {
                 this.image = "url('./background2.jpg')";
                 this.title = ['Don\'t', 'eat less.', 'Just', 'eat real.'];     
                 break;
+            case 3:         
+                this.image = "url('./background3.jpg')";
+                this.title = ['Special', 'Tastes', 'And', 'Looks.'];     
+                break;
         }
     }
   }
 };
+/*
+    TODO: Rem units
+    TODO: Animations
+    TODO: Reponsive navigation
+*/
 </script>
 
 <style scoped>
