@@ -48,6 +48,10 @@ export default {
                 this.image = "url('./background3.jpg')";
                 this.title = ['Special', 'Tastes', 'And', 'Looks.'];     
                 break;
+            case 4:         
+                this.image = "url('./background4.jpg')";
+                this.title = ['European', 'Cuisine', 'World', 'Tastes.'];     
+                break;
         }
     }
   }
