@@ -78,9 +78,10 @@ export default {
     }
 
    #slider {
-       height: 850px;
+       width: 100vw;
+       height: 90vh;
        background-repeat: no-repeat;
-       background-size: contain;
+       background-size: cover;
        overflow: hidden;
    }
 
