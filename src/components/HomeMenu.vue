@@ -226,7 +226,11 @@
                 </div>
             </div>           
         </div>
-
+        <div class="row mt-5 justify-content-center">
+            <img src='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/banner-1.png' width='369' height='451' class='image' />
+            <img src='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/banner-2.png' width='369' height='451' class='image' />
+            <img src='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/banner-3.png' width='369' height='451' class='image' />
+        </div>
     </div> 
 </template>
 
@@ -287,5 +291,15 @@ export default {
 
     .nopadding {
         padding: 0 !important;
+    }
+    
+    .image {
+        margin: 20px;
+        transition: opacity .2s;
+    }
+
+    .image:hover {
+        cursor: pointer;
+        opacity: 0.7;
     }
 </style>
