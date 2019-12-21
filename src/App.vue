@@ -10,6 +10,8 @@
     TODO: Reponsive navigation
 */
 
-<style lang="scss">
-
+<style>
+  body {
+    overflow-x: hidden;
+  }
 </style>
