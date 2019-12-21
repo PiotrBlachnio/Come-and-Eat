@@ -2,7 +2,7 @@
     <div id='homeMenu'>
         <div class="space"></div>
         <div class="row justify-content-center">
-            <div class="col-6 nopadding ml-5">
+            <div class="col-5 nopadding">
                 <div class="row justify-content-center">
                     <div class="col-6 ml-5 nopadding">
                         <div class="title">Main Menu</div>
@@ -113,6 +113,120 @@
                 <img src='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/home-img-1.png' width='571' height='572'/>
             </div>
         </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-5 nopadding text-right">
+                <img src='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/home-img-2.png' width='571' height='572'/>
+            </div>
+            <div class="col-6 nopadding">
+                <div class="row justify-content-center">
+                    <div class="col-6 ml-5 nopadding">
+                        <div class="title">Dinner</div>
+                    </div>            
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-6 ml-5 nopadding">
+                        <div class="line-2"></div>
+                    </div>               
+                </div>
+                <div class='row justify-content-center mt-4'>
+                    <div class="col-6 ml-5">
+                        <div class="row">
+                            <div class="col-auto dish-title nopadding">
+                                <span class='dish-name'>Chicken liver parfait</span>
+                            </div>
+                            <div class="col nopadding dots">
+                            </div>
+                            <div class="col-2 nopadding">
+                                <span class='cost'>$23.80</span><br>   
+                            </div>                                                                            
+                        </div>
+                        <div class="row">
+                            <div class="col nopadding">
+                                <span class='ingredients'>Chicken, onion, vegetable oil, Sour cream sauce, pepper, salt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row justify-content-center mt-4'>
+                    <div class="col-6 ml-5">
+                        <div class="row">
+                            <div class="col-auto dish-title nopadding">
+                                <span class='dish-name b'>Italian tasting platter</span>
+                            </div>
+                            <div class="col nopadding dots">
+                            </div>
+                            <div class="col-2 nopadding">
+                                <span class='cost'>$25.50</span><br>   
+                            </div>                                                                            
+                        </div>
+                        <div class="row">
+                            <div class="col nopadding">
+                                <span class='ingredients'>Three Italian Favorites: Baked Clams, Fried Calamari and Stuffed Shrimp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row justify-content-center mt-4'>
+                    <div class="col-6 ml-5">
+                        <div class="row">
+                            <div class="col-auto dish-title nopadding">
+                                <span class='dish-name b'>Pan roasted 'florida keys' mahi mahi</span>
+                            </div>
+                            <div class="col nopadding dots">
+                            </div>
+                            <div class="col-2 nopadding">
+                                <span class='cost'>$15.50</span><br>   
+                            </div>                                                                            
+                        </div>
+                        <div class="row">
+                            <div class="col nopadding">
+                                <span class='ingredients'>Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row justify-content-center mt-4'>
+                    <div class="col-6 ml-5">
+                        <div class="row">
+                            <div class="col-auto dish-title nopadding">
+                                <span class='dish-name b'>Crab Congee</span>
+                            </div>
+                            <div class="col nopadding dots">
+                            </div>
+                            <div class="col-2 nopadding">
+                                <span class='cost'>$19.99</span><br>   
+                            </div>                                                                            
+                        </div>
+                        <div class="row">
+                            <div class="col nopadding">
+                                <span class='ingredients'>Biscuits with fresh sausage patties & country gravy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row justify-content-center mt-4'>
+                    <div class="col-6 ml-5">
+                        <div class="row">
+                            <div class="col-auto dish-title nopadding">
+                                <span class='dish-name b'>Salt and pepper calamari</span>
+                            </div>
+                            <div class="col nopadding dots">
+                            </div>
+                            <div class="col-2 nopadding">
+                                <span class='cost'>$23.00</span><br>   
+                            </div>                                                                            
+                        </div>
+                        <div class="row">
+                            <div class="col nopadding">
+                                <span class='ingredients'>Rocket, lime, chipotle aioli</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+
     </div> 
 </template>
 
@@ -130,18 +244,19 @@ export default {
         height: 100px;
     }
    
-   .line {
-        width: 103px;
+   .line, .line-2 {
         height: 2px;
         background-color: #e44249;
     }
 
-    .dots {
-        border-bottom: 1px dotted #25292d;
+    .line {
+        width: 103px;
     }
 
-    .dotted {
-        width: auto;
+    .line-2{
+        width: 69px;
+    }
+    .dots {
         border-bottom: 1px dotted #25292d;
     }
 
