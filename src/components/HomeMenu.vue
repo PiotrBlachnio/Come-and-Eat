@@ -2,9 +2,9 @@
     <div id='homeMenu'>
         <div class="space"></div>
         <div class="row justify-content-center">
-            <div class="col-5 nopadding">
+            <div class="col-5 nopadding justify-content-center">
                 <div class="row justify-content-center">
-                    <div class="col-6 ml-5 nopadding">
+                    <div class="col-6 ml-5 nopadding mt-5">
                         <div class="title">Main Menu</div>
                     </div>            
                 </div>
@@ -120,7 +120,7 @@
             </div>
             <div class="col-6 nopadding">
                 <div class="row justify-content-center">
-                    <div class="col-6 ml-5 nopadding">
+                    <div class="col-6 ml-5 nopadding mt-5">
                         <div class="title">Dinner</div>
                     </div>            
                 </div>
@@ -231,6 +231,228 @@
             <img src='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/banner-2.png' width='369' height='451' class='image' />
             <img src='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/banner-3.png' width='369' height='451' class='image' />
         </div>
+        <div class="row justify-content-center">
+            <div class="col" style='margin-left: 150px;'>
+                <div class="row justify-content-center">
+                    <div class="col-6 nopadding mt-5">
+                        <div class="title">Breakfast</div>
+                    </div>            
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-6 nopadding">
+                        <div class="line"></div>
+                    </div>               
+                </div>
+                <div class='row justify-content-center mt-4'>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-auto dish-title nopadding">
+                                <span class='dish-name'>Western Sunrise</span>
+                            </div>
+                            <div class="col nopadding dots">
+                            </div>
+                            <div class="col-2 nopadding">
+                                <span class='cost'>$23.80</span><br>   
+                            </div>                                                                            
+                        </div>
+                        <div class="row">
+                            <div class="col nopadding">
+                                <span class='ingredients'>Two fried eggs with cheese & two meats made to perfection</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row justify-content-center mt-4'>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-auto dish-title nopadding">
+                                <span class='dish-name'>Cornish-Mackarel</span>
+                            </div>
+                            <div class="col nopadding dots">
+                            </div>
+                            <div class="col-2 nopadding">
+                                <span class='cost'>$15.50</span><br>   
+                            </div>                                                                            
+                        </div>
+                        <div class="row">
+                            <div class="col nopadding">
+                                <span class='ingredients'>Cornish mackerel, marinated tomatoes, fragrant curry, tamarillo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row justify-content-center mt-4'>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-auto dish-title nopadding">
+                                <span class='dish-name'>Roasted Steak Roulade</span>
+                            </div>
+                            <div class="col nopadding dots">
+                            </div>
+                            <div class="col-2 nopadding">
+                                <span class='cost'>$35.50</span><br>   
+                            </div>                                                                            
+                        </div>
+                        <div class="row">
+                            <div class="col nopadding">
+                                <span class='ingredients'>Parsley with apple cider vinegar, salt, sugar & spices</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row justify-content-center mt-4'>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-auto dish-title nopadding">
+                                <span class='dish-name'>"Country" Breakfast</span>
+                            </div>
+                            <div class="col nopadding dots">
+                            </div>
+                            <div class="col-2 nopadding">
+                                <span class='cost'>$19.99</span><br>   
+                            </div>                                                                            
+                        </div>
+                        <div class="row">
+                            <div class="col nopadding">
+                                <span class='ingredients'>Biscuits with fresh sausage patties & country gravy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row justify-content-center mt-4'>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-auto dish-title nopadding">
+                                <span class='dish-name'>Salt and Pepper Calamari</span>
+                            </div>
+                            <div class="col nopadding dots">
+                            </div>
+                            <div class="col-2 nopadding">
+                                <span class='cost'>$23.00</span><br>   
+                            </div>                                                                            
+                        </div>
+                        <div class="row">
+                            <div class="col nopadding">
+                                <span class='ingredients'>Rocket, lime, chipotle aioli</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row text-left">
+                    <div class="col-6 nopadding mt-5">
+                        <div class="title">Lunch</div>
+                    </div>            
+                </div>
+                <div class="row text-left">
+                    <div class="col-6 nopadding">
+                        <div class="line"></div>
+                    </div>               
+                </div>
+                <div class='row text-left mt-4'>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-auto dish-title nopadding">
+                                <span class='dish-name'>Cornish-Mackarel</span>
+                            </div>
+                            <div class="col nopadding dots">
+                            </div>
+                            <div class="col-2 nopadding">
+                                <span class='cost'>$15.50</span><br>   
+                            </div>                                                                            
+                        </div>
+                        <div class="row">
+                            <div class="col nopadding">
+                                <span class='ingredients'>Cornish mackerel, marinated tomatoes, fragrant curry, tamarillo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row text-left mt-4'>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-auto dish-title nopadding">
+                                <span class='dish-name'>Roasted Steak Roulade</span>
+                            </div>
+                            <div class="col nopadding dots">
+                            </div>
+                            <div class="col-2 nopadding">
+                                <span class='cost'>$35.50</span><br>   
+                            </div>                                                                            
+                        </div>
+                        <div class="row">
+                            <div class="col nopadding">
+                                <span class='ingredients'>Parsley with apple cider vinegar, salt, sugar & spices</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row text-left mt-4'>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-auto dish-title nopadding">
+                                <span class='dish-name'>Salt and Pepper Calamari</span>
+                            </div>
+                            <div class="col nopadding dots">
+                            </div>
+                            <div class="col-2 nopadding">
+                                <span class='cost'>$23.00</span><br>   
+                            </div>                                                                            
+                        </div>
+                        <div class="row">
+                            <div class="col nopadding">
+                                <span class='ingredients'>Rocket, lime, chipotle aioli</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row text-left mt-4'>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-auto dish-title nopadding">
+                                <span class='dish-name'>Western Sunrise</span>
+                            </div>
+                            <div class="col nopadding dots">
+                            </div>
+                            <div class="col-2 nopadding">
+                                <span class='cost'>$23.80</span><br>   
+                            </div>                                                                            
+                        </div>
+                        <div class="row">
+                            <div class="col nopadding">
+                                <span class='ingredients'>Two fried eggs with cheese & two meats made to perfection</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row text-left mt-4'>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-auto dish-title nopadding">
+                                <span class='dish-name'>"Country" Breakfast</span>
+                            </div>
+                            <div class="col nopadding dots">
+                            </div>
+                            <div class="col-2 nopadding">
+                                <span class='cost'>$19.99</span><br>   
+                            </div>                                                                            
+                        </div>
+                        <div class="row">
+                            <div class="col nopadding">
+                                <span class='ingredients'>Biscuits with fresh sausage patties & country gravy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center mr-5">
+            <router-link to='menu'>
+                <button class='button'>View All Menu</button>
+            </router-link>         
+        </div>
+        <div class="space"></div>
     </div> 
 </template>
 
@@ -301,5 +523,24 @@ export default {
     .image:hover {
         cursor: pointer;
         opacity: 0.7;
+    }
+
+    .button {
+        border: none;
+        border-radius: 6px;
+        width: 212px;
+        height: 59px;
+        background: #25292d;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: "Rubik", Sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: .5px;
+        transition: background-color .3s;
+    }
+
+    .button:hover {
+        background-color: #e44249;
     }
 </style>
