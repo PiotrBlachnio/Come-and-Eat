@@ -4,6 +4,7 @@
     <Slider v-bind:current='active_button' v-bind:title='title' v-bind:image = 'image' />
     <Welcome />
     <HomeMenu />
+    <HomeGallery />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Nav from '../components/Nav.vue';
 import Slider from '../components/Slider.vue';
 import Welcome from '../components/Welcome.vue';
 import HomeMenu from '../components/HomeMenu.vue';
+import HomeGallery from '../components/HomeGallery.vue';
 
 export default {
   name: 'home',
@@ -20,6 +22,7 @@ export default {
     Slider,
     Welcome,
     HomeMenu,
+    HomeGallery,
   },
   data() {
     return {
