@@ -14,7 +14,8 @@
                 </div>                      
             </div>
             <div class="row justify-content-center mt-5">
-                <div class="image mr-5"></div>
+                <div class="row">
+                    <div class="image mr-5"></div>
                 <div class='form ml-5'>
                     <form> 
                         <div class="row">
@@ -30,11 +31,14 @@
                             <input type='text' class='input' placeholder="Email*"/>
                         </div>
                         <div class="row">
-                            <textarea placeholder="Notes" class='input-message'>
-                            </textarea>
+                            <textarea placeholder="Notes" class='input-message'></textarea>                           
+                        </div>
+                        <div class="row justify-content-center mt-4">
+                            <input type='submit' class='button' value='Reserve' />
                         </div>
                     </form>
                 </div>
+                </div>               
             </div>
         </div>
         <div class="space"></div>
@@ -49,7 +53,7 @@ export default {
 
 <style scoped>
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300|Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300|Rubik:400,500&display=swap');
 
     .title {
         font-size: 40px;
@@ -103,4 +107,23 @@ export default {
         box-shadow: 0 5px 32px rgba(103, 122, 141, 0.17);
     }
 
+    .button {
+        width: 174px;
+        height: 56px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #fff;
+        background: #e44249;
+        border-radius: 6px;
+        border: none;
+        letter-spacing: 1px;
+        transition: background .5s;
+    }
+
+    .button:hover {
+        background: #0c0404;
+    }
+    
 </style>
