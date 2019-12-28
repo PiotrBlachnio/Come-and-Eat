@@ -13,9 +13,31 @@
                     </div>    
                 </div>                      
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center mt-5">
+                <div class="image mr-5"></div>
+                <div class='form ml-5'>
+                    <form> 
+                        <div class="row">
+                            <input type='text' class='input' placeholder="Name*"/>
+                            <input type='text' class='input' placeholder="Phone*"/>
+                        </div>
+                        <div class="row">
+                            <input type='text' class='input' placeholder="DD/MM/YY*"/>
+                            <input type='text' class='input' placeholder="Time*"/>
+                        </div>
+                        <div class="row">
+                            <input type='text' class='input' placeholder="Seats*"/>
+                            <input type='text' class='input' placeholder="Email*"/>
+                        </div>
+                        <div class="row">
+                            <textarea placeholder="Notes" class='input-message'>
+                            </textarea>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
+        <div class="space"></div>
     </div> 
 </template>
 
@@ -41,4 +63,39 @@ export default {
         height: 2px;
         background: #e44249;
     }
+
+    .space {
+        height: 100px;
+    }
+
+    .image {
+        width: 580px;
+        height: 300px;
+        background-image: url('https://ld-wp.template-help.com/rockthemes/21791/wp-content/plugins/jet-elements/assets/images/dummy-map.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(1.5px);
+    }
+
+    .input {       
+        width: 275px;
+        height: 50px;   
+    }
+
+    .input-message {
+        width: 580px;
+        height: 110px;
+    }
+
+    .input, .input-message {
+        margin: 8px;
+        padding: 15px;
+        font-family: "Montserrat", Sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        border: 1px solid #ebeced;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+
 </style>
