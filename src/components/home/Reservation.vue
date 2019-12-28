@@ -95,7 +95,12 @@ export default {
         font-weight: 400;
         border: 1px solid #ebeced;
         background-color: #fff;
-        border-radius: 4px;
+        transition: box-shadow .2s;
+    }
+
+    .input:focus, .input-message:focus {
+        outline: none;
+        box-shadow: 0 5px 32px rgba(103, 122, 141, 0.17);
     }
 
 </style>
