@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: 'Welcome',
+  name: 'Introduction',
 };
 </script>
 

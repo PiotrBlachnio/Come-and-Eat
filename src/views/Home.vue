@@ -2,27 +2,33 @@
   <div class="home">
     <Nav v-bind:current='current' />
     <Slider v-bind:current='active_button' v-bind:title='title' v-bind:image = 'image' />
-    <Welcome />
-    <HomeMenu />
-    <HomeGallery />
+    <Introduction />
+    <Menu />
+    <Gallery />
+    <Reservation />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Nav from '../components/Nav.vue';
-import Slider from '../components/Slider.vue';
-import Welcome from '../components/Welcome.vue';
-import HomeMenu from '../components/HomeMenu.vue';
-import HomeGallery from '../components/HomeGallery.vue';
+import Slider from '../components/home/Slider.vue';
+import Introduction from '../components/home/Introduction.vue';
+import Menu from '../components/home/Menu.vue';
+import Gallery from '../components/home/Gallery.vue';
+import Reservation from '../components/home/Reservation.vue';
+import Footer from '../components/Footer.vue';
 
 export default {
   name: 'home',
   components: {
     Nav,
     Slider,
-    Welcome,
-    HomeMenu,
-    HomeGallery,
+    Introduction,
+    Menu,
+    Gallery,
+    Reservation,
+    Footer,
   },
   data() {
     return {
