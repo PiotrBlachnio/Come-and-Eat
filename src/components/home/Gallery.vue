@@ -26,12 +26,13 @@
                 </div>
             </div>
         </div>      
+        <div class="space"></div>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'HomeGallery'
+  name: 'Gallery'
 };
 </script>
 
@@ -111,5 +112,9 @@ export default {
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url('https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/project-11.png');
+    }
+
+    .space {
+        height: 100px;
     }
 </style>

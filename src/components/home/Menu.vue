@@ -458,7 +458,7 @@
 
 <script>
 export default {
-  name: 'HomeMenu',
+  name: 'Menu',
 };
 </script>
 
