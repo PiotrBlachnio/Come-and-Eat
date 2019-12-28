@@ -6,6 +6,7 @@
     <Menu />
     <Gallery />
     <Reservation />
+    <Footer />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import Introduction from '../components/home/Introduction.vue';
 import Menu from '../components/home/Menu.vue';
 import Gallery from '../components/home/Gallery.vue';
 import Reservation from '../components/home/Reservation.vue';
+import Footer from '../components/Footer.vue';
 
 export default {
   name: 'home',
@@ -26,6 +28,7 @@ export default {
     Menu,
     Gallery,
     Reservation,
+    Footer,
   },
   data() {
     return {
