@@ -43,8 +43,34 @@
                     </div>
                 </div>
             </div>
-            <div class="row second-row">
+            <div class="row text-center second-row">
+                <div class="col-5 mt-4">
+                    <img src='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/logo-2-1.png' width='135' height='26'/>
+                    <span class='copy'>Copyright © 2018. All Rights Reserved</span>
+                </div>
+                <div class="col-6 mr-5">
+                    <div class="row mr-5">
+                        <b-nav-item class='ml-auto item mt-4 md' to='home' :class="{'active':current=='home'}">
+                            Home
+                        </b-nav-item>    
 
+                        <b-nav-item class='item mt-4' to='about' :class="{'active':current==='about'}">
+                            About
+                        </b-nav-item>  
+
+                        <b-nav-item class='item mt-4' to='menu' :class="{'active':current==='menu'}">
+                            Menu
+                        </b-nav-item>
+
+                        <b-nav-item class='item mt-4' to='gallery' :class="{'active':current==='gallery'}">
+                            Gallery
+                        </b-nav-item>  
+
+                        <b-nav-item class='item mt-4 last-link' to='contact' :class="{'active':current==='contact'}">
+                            Contact
+                        </b-nav-item>    
+                    </div>                   
+                </div>
             </div>
         </div>
     </div> 
@@ -53,11 +79,13 @@
 <script>
 export default {
   name: 'Footer',
+  props: ['current'],
 };
 </script>
 
 <style scoped>
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Open+Sans|Rubik&display=swap');
 
     .footer {
         height: 281px;
@@ -98,8 +126,36 @@ export default {
         padding: 15px;
     }
 
+    .copy {
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.5);
+        padding: 10px;
+        display: inline-block;
+    }
+
     .icon:hover {
         color: #fff;
-        cursor: pointer;
+        cursor: pointer;   
     }
+
+    .item {
+        float: left;
+        list-style: none;       
+    }
+
+    .item .nav-link {
+        color: #97999b;
+        font-family: "Rubik", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        transition: color .5s;
+    }
+
+    .item .nav-link:hover, .active .nav-link{
+        color: #fff;
+    }
+
 </style>
