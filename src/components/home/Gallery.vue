@@ -6,22 +6,22 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col image image-1" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="500" data-aos-once="true">
+                <div class="col image image-1" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
                    
                 </div>
-                <div class="col image image-2 ml-3" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="500" data-aos-once="true">
+                <div class="col image image-2 ml-3" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
                    
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col nopadding">
-                    <div class="row  image image-3" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="500" data-aos-once="true">
+                    <div class="row  image image-3" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
                     </div>
-                    <div class="row image image-4" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="500" data-aos-once="true">
+                    <div class="row image image-4" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
 
                     </div>
                 </div>
-                <div class="col nopadding image image-5" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="500" data-aos-once="true">
+                <div class="col nopadding image image-5" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
                     
                 </div>
             </div>
