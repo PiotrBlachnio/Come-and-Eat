@@ -54,7 +54,7 @@ export default {
         text-transform: uppercase;
         line-height: 1.4em;
         letter-spacing: 0em;
-        transition: all 0.07s ease;
+        transition: all .1s;
     }
 
     .nav-link:hover {
@@ -62,7 +62,7 @@ export default {
     }
 
     .item .nav-link:hover, .active .nav-link {
-        border-bottom: 3px solid #e44249;
+        border-bottom: 2px solid #e44249;
         text-decoration: none;
         cursor: pointer;
     }
