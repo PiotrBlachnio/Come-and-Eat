@@ -3,7 +3,8 @@
     <Nav v-bind:current='current' />
     <Description />
     <Counter />
-    <!-- <Footer v-bind:current='current'/> -->
+    <Team />
+    <Footer v-bind:current='current'/>
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import Nav from '../components/Nav.vue';
 import Description from '../components/about/Description.vue';
 import Counter from '../components/about/Counter.vue';
+import Team from '../components/about/Team.vue';
 import Footer from '../components/Footer.vue';
 
 export default {
@@ -20,6 +22,7 @@ export default {
     Description,
     Footer,
     Counter,
+    Team,
   },
   data() {
     return {
