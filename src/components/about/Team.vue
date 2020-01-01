@@ -29,7 +29,7 @@
                     <br>
                     <span class='position'>head cheaf</span>
                 </div>
-            </div>
+            </div>      
         </div>
     </div> 
 </template>
@@ -42,7 +42,7 @@ export default {
 
 <style scoped>
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 
     .title, .name {
         color: #25292d;
