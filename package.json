@@ -12,10 +12,12 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@fortawesome/vue-fontawesome": "^0.1.9",
+    "@glidejs/glide": "^3.4.1",
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.1.0",
     "core-js": "^3.4.3",
     "countup.js": "^2.0.4",
+    "postscribe": "^2.0.8",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3"
   },

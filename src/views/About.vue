@@ -5,6 +5,7 @@
     <Counter />
     <Team />
     <Banner />
+    <Comments />
     <Footer v-bind:current='current'/>
   </div>
 </template>
@@ -15,6 +16,7 @@ import Description from '../components/about/Description.vue';
 import Counter from '../components/about/Counter.vue';
 import Team from '../components/about/Team.vue';
 import Banner from '../components/Banner.vue';
+import Comments from '../components/about/Comments.vue';
 import Footer from '../components/Footer.vue';
 
 export default {
@@ -26,6 +28,7 @@ export default {
     Counter,
     Team,
     Banner,
+    Comments,
   },
   data() {
     return {
