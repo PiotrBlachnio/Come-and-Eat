@@ -1,20 +1,31 @@
 <template>
     <div id='comments'>
         <div class="container" style='margin-top: 90px;'>
-            <div class="row">
+            <div class="row justify-content-center">
+                <span class='title'>What People say about us</span>
+            </div>
+            <div class="row mt-5">
                 <div class="glide">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
-                            <li class="glide__slide">Slide 1</li>
+                            <li class="glide__slide">
+                                <font-awesome-icon icon="quote-left" class='quote-icon'/><br>
+                                <span class='description'>
+                                    description
+                                </span><br>
+                                <div class="image-container">
+                                    <img src="https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/testi-1.png" width='83' height='83'><br>
+                                    <span class='name'>John Franklin</span><br>
+                                    <span class='position'>head cheaf</span>
+                                </div>                             
+                            </li>
                             <li class="glide__slide">Slide 2</li>
                             <li class="glide__slide">Slide 3</li>
                         </ul>
                     </div>
                     <div class="glide__arrows" data-glide-el="controls">
                         <font-awesome-icon icon="arrow-left" class='icon icon-left' data-glide-dir="<"/>
-                        <font-awesome-icon icon="arrow-right" class='icon icon-right' data-glide-dir=">"/>
-                        <!-- <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button> -->
-                        <!-- <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button> -->
+                        <font-awesome-icon icon="arrow-right" class='icon icon-right' data-glide-dir=">"/>          
                     </div>
                 </div>
             </div>
@@ -33,12 +44,14 @@ export default {
 
 <style scoped>
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400i|Rubik&display=swap');
 
     .glide__track {
         text-align: center;
     }
 
     .icon {
+        font-size: 25px;
         position: absolute;
         display: block;
         top: 50%;
@@ -59,5 +72,27 @@ export default {
         cursor: grabbing;
         cursor: -moz-grabbing;
         cursor: -webkit-grabbing
+    }
+
+    .title {
+        color: #25292d;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        text-transform: uppercase;   
+    }
+
+    .quote-icon {
+        font-size: 29px;
+        color: #25292d;
+    }
+
+    .description {
+        color: #7b7e81;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 30px;
     }
 </style>
