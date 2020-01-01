@@ -13,7 +13,7 @@
                         <font-awesome-icon icon="users" class='icon'/>
                         <div id='counter-1' class='number'></div>
                     </div>
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <span class='description'>Happy Clients</span>
                     </div>                                  
                 </div>
@@ -22,7 +22,7 @@
                         <font-awesome-icon icon="hamburger" class='icon'/>
                         <div id='counter-2' class='number'></div>
                     </div>
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <span class='description'>Amazing Dishes</span>
                     </div>                                  
                 </div>
@@ -31,7 +31,7 @@
                         <font-awesome-icon icon="coffee" class='icon'/>
                         <div id='counter-3' class='number'></div>
                     </div>
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <span class='description'>Satisfied Staff</span>
                     </div>                                  
                 </div>
@@ -40,7 +40,7 @@
                         <font-awesome-icon icon="clock" class='icon'/>
                         <div id='counter-4' class='number'></div>
                     </div>
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <span class='description'>Work Hours</span>
                     </div>                                  
                 </div>
@@ -73,17 +73,6 @@ export default {
             c4.start();
         }
     })
-
-    // window.onload = function() {
-    //     let c1 = new CountUp('counter-1', 5437);
-    //     let c2 = new CountUp('counter-2', 1230);
-    //     let c3 = new CountUp('counter-3', 251);
-    //     let c4 = new CountUp('counter-4', 9437);
-    //     c1.start();
-    //     c2.start();
-    //     c3.start();
-    //     c4.start();
-    // }
     
 </script>
 
@@ -100,7 +89,7 @@ export default {
     }
     
     .counter {
-        padding: 100px;
+        padding: 10px 90px 50px 90px;
     }
 
     .description {
