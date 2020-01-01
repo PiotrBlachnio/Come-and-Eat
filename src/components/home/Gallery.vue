@@ -6,22 +6,22 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col image image-1">
+                <div class="col image image-1" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
                    
                 </div>
-                <div class="col image image-2 ml-3">
+                <div class="col image image-2 ml-3" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
                    
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col nopadding">
-                    <div class="row  image image-3">
+                    <div class="row  image image-3" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
                     </div>
-                    <div class="row image image-4">
+                    <div class="row image image-4" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
 
                     </div>
                 </div>
-                <div class="col nopadding image image-5">
+                <div class="col nopadding image image-5" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
                     
                 </div>
             </div>

@@ -124,6 +124,7 @@ export default {
         font-size: 25px;
         transition: color .5s;
         padding: 15px;
+        display: inline-block;
     }
 
     .copy {

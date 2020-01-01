@@ -5,23 +5,23 @@
                 <b-img width=270px height=52px src="https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/logo-1.png" class='mt-3 logo'></b-img>
             </router-link>
             
-            <b-nav-item class='ml-auto item mt-4 md' to='home' :class="{'active':current=='home'}">
+            <b-nav-item class='ml-auto item mt-4 md' to='home' :class="{'active':current=='home'}" data-aos="fade-right" data-aos-duration="1000">
                     Home
             </b-nav-item>    
 
-            <b-nav-item class='item mt-4' to='about' :class="{'active':current==='about'}">
+            <b-nav-item class='item mt-4' to='about' :class="{'active':current==='about'}" data-aos="fade-right" data-aos-duration="1000">
                     About
             </b-nav-item>  
 
-            <b-nav-item class='item mt-4' to='menu' :class="{'active':current==='menu'}">
+            <b-nav-item class='item mt-4' to='menu' :class="{'active':current==='menu'}" data-aos="fade-right" data-aos-duration="1000">
                     Menu
             </b-nav-item>
 
-            <b-nav-item class='item mt-4' to='gallery' :class="{'active':current==='gallery'}">
+            <b-nav-item class='item mt-4' to='gallery' :class="{'active':current==='gallery'}" data-aos="fade-right" data-aos-duration="1000">
                     Gallery
             </b-nav-item>  
 
-            <b-nav-item class='item mt-4 last-link' to='contact' :class="{'active':current==='contact'}">
+            <b-nav-item class='item mt-4 last-link' to='contact' :class="{'active':current==='contact'}" data-aos="fade-right" data-aos-duration="1000">
                     Contact
             </b-nav-item>    
         </b-nav>

@@ -2,7 +2,7 @@
     <div id='homeMenu'>
         <div class="space"></div>
         <div class="row justify-content-center">
-            <div class="col-5 nopadding justify-content-center">
+            <div class="col-5 nopadding justify-content-center" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                 <div class="row justify-content-center">
                     <div class="col-6 ml-5 nopadding mt-5">
                         <div class="title">Main Menu</div>
@@ -109,16 +109,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 nopadding">
+            <div class="col-4 nopadding" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
                 <img src='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/home-img-1.png' width='571' height='572'/>
             </div>
         </div>
 
         <div class="row justify-content-center mt-5">
-            <div class="col-5 nopadding text-right">
+            <div class="col-5 nopadding text-right" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                 <img src='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/home-img-2.png' width='571' height='572'/>
             </div>
-            <div class="col-6 nopadding">
+            <div class="col-6 nopadding" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
                 <div class="row justify-content-center">
                     <div class="col-6 ml-5 nopadding mt-5">
                         <div class="title">Dinner</div>
@@ -226,13 +226,13 @@
                 </div>
             </div>           
         </div>
-        <div class="row mt-5 justify-content-center">
+        <div class="row mt-5 justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             <img src='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/banner-1.png' width='369' height='451' class='image' />
             <img src='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/banner-2.png' width='369' height='451' class='image' />
             <img src='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/banner-3.png' width='369' height='451' class='image' />
         </div>
         <div class="row justify-content-center">
-            <div class="col" style='margin-left: 150px;'>
+            <div class="col" style='margin-left: 150px;' data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                 <div class="row justify-content-center">
                     <div class="col-6 nopadding mt-5">
                         <div class="title">Breakfast</div>
@@ -339,7 +339,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
                 <div class="row text-left">
                     <div class="col-6 nopadding mt-5">
                         <div class="title">Lunch</div>

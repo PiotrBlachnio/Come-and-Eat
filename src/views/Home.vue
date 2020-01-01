@@ -6,7 +6,7 @@
     <Menu />
     <Gallery />
     <Reservation />
-    <Footer v-bind:current='current_2'/>
+    <Footer v-bind:current='current'/>
   </div>
 </template>
 
@@ -33,7 +33,6 @@ export default {
   data() {
     return {
       current: 'home',
-      current_2: 'home',
       active_button: '1',
       title: ['Select', 'Delicious', 'Try', 'Special.'],
       image: "url('./background.jpg')",
