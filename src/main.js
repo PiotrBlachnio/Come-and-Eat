@@ -16,12 +16,5 @@ Vue.config.productionTip = false;
 
 new Vue({
   router,
-  render: h => h(App),
-  mounted: function() {
-    const config = {
-      type: 'carousel',
-      perView: 1
-    };
-    new Glide('.glide', config).mount()
-  },
+  render: h => h(App)
 }).$mount('#app');

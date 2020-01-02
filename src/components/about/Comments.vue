@@ -40,6 +40,13 @@ import postscribe from 'postscribe'
 
 export default {
   name: 'Comments',
+  mounted: function() {
+      const config = {
+      type: 'carousel',
+      perView: 1
+    };
+    new Glide('.glide', config).mount()
+  },
 }; 
      
 </script>
