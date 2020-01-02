@@ -4,14 +4,16 @@
             <div class="row justify-content-center">
                 <span class='title'>What People say about us</span>
             </div>
-            <div class="row mt-5">
+            <div class="row mt-4">
                 <div class="glide">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
                             <li class="glide__slide">
                                 <font-awesome-icon icon="quote-left" class='quote-icon'/><br>
                                 <span class='description'>
-                                    description
+                                    I loved your cuisine, ambience and service! A combination of al these elements is perfect here. I visited the restaurant with my<br>
+                                    friends and I was amazed by its interior and rich menu! Thanks for your great job! Your desserts are awesome and very lovely.<br>
+                                    Nulla tincidunt euismod justo, non laoreet tellus maximus dapibus. Praesent porttitor ante ac mattis volutpat.
                                 </span><br>
                                 <div class="image-container">
                                     <img src="https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/testi-1.png" width='83' height='83'><br>
@@ -88,6 +90,8 @@ export default {
     }
 
     .description {
+        display: inline-block;
+        margin-top: 20px;
         color: #7b7e81;
         font-family: 'Open Sans', sans-serif;
         font-size: 17px;

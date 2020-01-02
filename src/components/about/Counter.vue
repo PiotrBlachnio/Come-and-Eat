@@ -53,16 +53,12 @@
 </template>
 
 <script>
+import { CountUp } from 'countup.js';
+
 export default {
   name: 'Counter',
-};
-
-    import { CountUp } from 'countup.js';
-
-    let is_done = false;
-    window.addEventListener('scroll', function(e) {
-        if(!is_done) {
-            is_done = true;
+  mounted: function(){
+      window.addEventListener('scroll', function(e) {
             let c1 = new CountUp('counter-1', 5437);
             let c2 = new CountUp('counter-2', 1230);
             let c3 = new CountUp('counter-3', 251);
@@ -71,9 +67,10 @@ export default {
             c2.start();
             c3.start();
             c4.start();
-        }
-    })
-    
+        }, {once: true});
+  }
+};
+      
 </script>
 
 <style scoped>
