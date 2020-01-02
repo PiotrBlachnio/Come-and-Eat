@@ -16,7 +16,7 @@
                                     Nulla tincidunt euismod justo, non laoreet tellus maximus dapibus. Praesent porttitor ante ac mattis volutpat.
                                 </span><br>
                                 <div class="image-container">
-                                    <img src="https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/testi-1.png" width='83' height='83'><br>
+                                    <img src="https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/testi-1.png" class='image'><br>
                                     <span class='name'>John Franklin</span><br>
                                     <span class='position'>head cheaf</span>
                                 </div>                             
@@ -105,5 +105,30 @@ export default {
         font-weight: 400;
         font-style: italic;
         line-height: 30px;
+    }
+
+    .image {
+        width: 83px;
+        height: 83px;
+        margin-top: 15px;
+        border-radius: 100px;
+    }
+
+    .name {
+        color: #25292d;
+        font-family: 'Rubik', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1em;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    .position {
+        color: #7b7e81;
+        font-family: 'Rubik', sans-serif;
+        font-family: 15px;
+        font-weight: 400;
     }
 </style>
