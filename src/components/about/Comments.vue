@@ -21,8 +21,32 @@
                                     <span class='position'>head cheaf</span>
                                 </div>                             
                             </li>
-                            <li class="glide__slide">Slide 2</li>
-                            <li class="glide__slide">Slide 3</li>
+                            <li class="glide__slide">
+                                <font-awesome-icon icon="quote-left" class='quote-icon'/><br>
+                                <span class='description'>
+                                    Totally stunning atmosphere and friendly personnel! I’m amazed with your menu positions and meals taste! Thank you for your<br>
+                                    professional attitude to your work and for your attention to details! Perfect restaurant! Me and my family will definitely visit your<br>
+                                    again.
+                                </span><br>
+                                <div class="image-container">
+                                    <img src="https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/testi-2.png" class='image'><br>
+                                    <span class='name'>Dayle Peters</span><br>
+                                    <span class='position'>head cheaf</span>
+                                </div>                             
+                            </li>
+                            <li class="glide__slide">
+                                <font-awesome-icon icon="quote-left" class='quote-icon'/><br>
+                                <span class='description'>
+                                    I’m new in the city and I was recommended to visit Artichaut by my friends. I’m very grateful for this recommendation! Great<br>
+                                    cuisine, fast service and extremely stylish interior - that’s all I love in restaurants! I appreciated your serving and your professional<br>
+                                    staff.
+                                </span><br>
+                                <div class="image-container">
+                                    <img src="https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/testi-3.png" class='image'><br>
+                                    <span class='name'>Eva Savits</span><br>
+                                    <span class='position'>head cheaf</span>
+                                </div>                             
+                            </li>
                         </ul>
                     </div>
                     <div class="glide__arrows" data-glide-el="controls">
@@ -67,14 +91,19 @@ export default {
         z-index: 2;
         cursor: pointer;
         transform: translateY(-50%);
+        color: #7b7e81;
     }
 
     .icon-left {
-        left: 2em;
+        left: .5em;
     }
 
     .icon-right {
-        right: 2em;
+        right: .5em;
+    }
+
+    .icon:hover {
+        color: #e44249;
     }
 
     .glide--dragging {
