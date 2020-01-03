@@ -92,6 +92,7 @@ export default {
         cursor: pointer;
         transform: translateY(-50%);
         color: #7b7e81;
+        transition: color .5s;
     }
 
     .icon-left {

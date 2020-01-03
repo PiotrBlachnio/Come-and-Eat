@@ -1,0 +1,123 @@
+<template>
+    <div id='root'>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <span class='title'>Tasty Dishes</span>
+                </div>             
+            </div>
+            <div class="row">
+                <div class="col text-center mt-4">
+                    <span class='link link-active'>
+                    Appetizers
+                    </span>
+                    <span class='link'>
+                        Dessert
+                    </span>
+                    <span class='link'>
+                        Drinks
+                    </span>
+                    <span class='link'>
+                        Main Dishes
+                    </span>
+                    <span class='link'>
+                        Panini Pasta
+                    </span>
+                    <span class='link'>
+                        Risotto
+                    </span>
+                    <span class='link'>
+                        Salads
+                    </span>
+                    <span class='link'>
+                        Sauce Soups
+                    </span>
+                </div>             
+            </div>
+            <div class="row mt-5">
+                <div class="dish">
+                    <div class="image"></div>
+                    <span class='name'>Grilled free salad</span>
+                    <span class='price'>$19.99</span><br>
+                    <span class='description'>Mesclun greens, pepperjack cheese, bacon,<br>
+                                                vocado, corn, tomato, cucumbers    
+                    </span>             
+                </div>
+            </div>
+        </div>
+    </div> 
+</template>
+
+<script>
+export default {
+  name: 'Dishes',
+};
+</script>
+
+<style scoped>
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+
+    #root {
+        margin-top: 100px;
+    }
+
+    .title {
+        color: #25292d;
+        font-family: 'Rubik', sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .link {
+        color: #7b7e81;
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 18px;
+        padding: 15px;
+        cursor: pointer;
+        transition: color .5s;
+    }
+
+    .link-active, .link:hover {
+        color: #e44249;
+    }
+
+    .dish {
+        width: 270px;
+        position: relative;
+    }
+
+    .image {
+        width: 270px;
+        height: 300px;
+        border-radius: 10px;
+        background: url('https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-1.png');
+    }
+
+    .name, .price {
+        color: #25292d;
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    .price {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+    }
+    
+    .description {
+        color: #7b7e81;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 300;
+    }
+</style>
