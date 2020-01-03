@@ -36,31 +36,61 @@
             </div>
             <div class="row mt-5 justify-content-center">
                 <div class="dish dish-1">
-                    <div class="image"></div>
+                    <div class="image" data-url='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-1.png'></div>
                     <span class='name' data-text='Grilled free salad'></span>
                     <span class='price'>$19.99</span><br>
                     <span class='description' data-text='Mesclun greens, pepperjack cheese, bacon, avocado, corn, tomato, cucumbers'>  
                     </span>             
                 </div>
                 <div class="dish dish-2">
-                    <div class="image"></div>
+                    <div class="image" data-url='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-2.png'></div>
                     <span class='name' data-text='Masala Spiced Chickpeas'></span>
                     <span class='price'>$19.99</span><br>
                     <span class='description' data-text='Chickpeas, rice, peppers'>
                     </span>             
                 </div>
                 <div class="dish dish-3">
-                    <div class="image"></div>
+                    <div class="image" data-url='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-3.png'></div>
                     <span class='name' data-text='Asian Hoisin Pork'></span>
                     <span class='price'>$19.99</span><br>
                     <span class='description' data-text='Pork, seasonal vegetables'>
                     </span>             
                 </div>
                 <div class="dish dish-4">
-                    <div class="image"></div>
-                    <span class='name' data-text=''>Chicken doro wat</span>
+                    <div class="image" data-url='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-4.png'></div>
+                    <span class='name' data-text='Chicken doro wat'></span>
                     <span class='price'>$19.99</span><br>
                     <span class='description' data-text='Chicken, ginger, eggs'>
+                    </span>             
+                </div>
+            </div>
+            <div class="row justify-content-center mt-1">
+                <div class="dish dish-1">
+                    <div class="image" data-url='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-5.png'></div>
+                    <span class='name' data-text='Kung Pao chicken'></span>
+                    <span class='price'>$19.99</span><br>
+                    <span class='description' data-text='Peppers, chicken, peanuts'>  
+                    </span>             
+                </div>
+                <div class="dish dish-2">
+                    <div class="image" data-url='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-6.png'></div>
+                    <span class='name' data-text='Mango Chili chutney'></span>
+                    <span class='price'>$19.99</span><br>
+                    <span class='description' data-text='Chilies, aromatic spices'>
+                    </span>             
+                </div>
+                <div class="dish dish-3">
+                    <div class="image" data-url='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/portfolio-6.png'></div>
+                    <span class='name' data-text='Spicy fried Rice & Bacon'></span>
+                    <span class='price'>$19.99</span><br>
+                    <span class='description' data-text='Bacon, rice, vegetables'>
+                    </span>             
+                </div>
+                <div class="dish dish-4">
+                    <div class="image" data-url='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/portfolio-7.png'></div>
+                    <span class='name' data-text='Ground Beef Stew'></span>
+                    <span class='price'>$19.99</span><br>
+                    <span class='description' data-text='Crushed red pepper, ground beef, garlic'>
                     </span>             
                 </div>
             </div>
@@ -71,6 +101,13 @@
 <script>
 export default {
   name: 'Dishes',
+  mounted: function() {
+      const image_containers = document.querySelectorAll('.image');
+      image_containers.forEach(image_container => {
+          let url = image_container.getAttribute('data-url');
+          image_container.style.backgroundImage ='url(' + url + ')';
+      });
+  },
 };
 </script>
 
@@ -117,23 +154,8 @@ export default {
         border-radius: 10px;
     }
 
-    .dish-1 .image{
-        background: url('https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-1.png');
-    }
-
     .dish .description:after, .dish .name:after {
         content: attr(data-text);
-    }
-    .dish-2 .image {
-        background: url('https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-2.png');
-    }
-
-    .dish-3 .image {
-        background: url('https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-3.png');
-    }
-
-    .dish-4 .image {
-        background: url('https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-4.png');
     }
 
     .name, .price {
