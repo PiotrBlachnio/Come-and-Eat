@@ -1,6 +1,6 @@
 <template>
     <div id='root'>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col text-center">
                     <span class='title'>Tasty Dishes</span>
@@ -34,13 +34,33 @@
                     </span>
                 </div>             
             </div>
-            <div class="row mt-5">
-                <div class="dish">
+            <div class="row mt-5 justify-content-center">
+                <div class="dish dish-1">
                     <div class="image"></div>
-                    <span class='name'>Grilled free salad</span>
+                    <span class='name' data-text='Grilled free salad'></span>
                     <span class='price'>$19.99</span><br>
-                    <span class='description'>Mesclun greens, pepperjack cheese, bacon,<br>
-                                                vocado, corn, tomato, cucumbers    
+                    <span class='description' data-text='Mesclun greens, pepperjack cheese, bacon, avocado, corn, tomato, cucumbers'>  
+                    </span>             
+                </div>
+                <div class="dish dish-2">
+                    <div class="image"></div>
+                    <span class='name' data-text='Masala Spiced Chickpeas'></span>
+                    <span class='price'>$19.99</span><br>
+                    <span class='description' data-text='Chickpeas, rice, peppers'>
+                    </span>             
+                </div>
+                <div class="dish dish-3">
+                    <div class="image"></div>
+                    <span class='name' data-text='Asian Hoisin Pork'></span>
+                    <span class='price'>$19.99</span><br>
+                    <span class='description' data-text='Pork, seasonal vegetables'>
+                    </span>             
+                </div>
+                <div class="dish dish-4">
+                    <div class="image"></div>
+                    <span class='name' data-text=''>Chicken doro wat</span>
+                    <span class='price'>$19.99</span><br>
+                    <span class='description' data-text='Chicken, ginger, eggs'>
                     </span>             
                 </div>
             </div>
@@ -88,13 +108,32 @@ export default {
     .dish {
         width: 270px;
         position: relative;
+        margin: 15px;
     }
 
     .image {
         width: 270px;
         height: 300px;
         border-radius: 10px;
+    }
+
+    .dish-1 .image{
         background: url('https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-1.png');
+    }
+
+    .dish .description:after, .dish .name:after {
+        content: attr(data-text);
+    }
+    .dish-2 .image {
+        background: url('https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-2.png');
+    }
+
+    .dish-3 .image {
+        background: url('https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-3.png');
+    }
+
+    .dish-4 .image {
+        background: url('https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-4.png');
     }
 
     .name, .price {
