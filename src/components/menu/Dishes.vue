@@ -234,43 +234,70 @@ export default {
       const image_containers = document.querySelectorAll('.image');
       const names = document.querySelectorAll('.name');
       const descriptions = document.querySelectorAll('.description');
-      for(let i=0; i<8; i++) {
-          names[i].setAttribute('data-text', data[0][i].name);
-          image_containers[i].setAttribute('data-url', data[0][i].url);
-          descriptions[i].setAttribute('data-text', data[0][i].description);
-      };         
-      image_containers.forEach(image_container => {
+
+      function setImages() {
+          image_containers.forEach(image_container => {
           let url = image_container.getAttribute('data-url');
           image_container.style.backgroundImage ='url(' + url + ')';
-      });
-      
+        });
+      };
 
-      document.querySelector('.link-1').addEventListener('click', () => {
-          document.querySelector('.link-active').classList.remove('link-active');
-          document.querySelector('.link-1').classList.add('link-active');
+      // Change images, names and descriptions of dishes
+      function setAttributes(number) {
           for(let i=0; i<8; i++) {
-              names[i].setAttribute('data-text', data[0][i].name);
-              image_containers[i].setAttribute('data-url', data[0][i].url);
-              descriptions[i].setAttribute('data-text', data[0][i].description);
-          };         
-          image_containers.forEach(image_container => {
-            let url = image_container.getAttribute('data-url');
-            image_container.style.backgroundImage ='url(' + url + ')';
-          });
+              names[i].setAttribute('data-text', data[number][i].name);
+              image_containers[i].setAttribute('data-url', data[number][i].url);
+              descriptions[i].setAttribute('data-text', data[number][i].description);
+              setImages();
+          }; 
+      }
+
+      function changeLinkActive(link) {
+          document.querySelector('.link-active').classList.remove('link-active');
+          document.querySelector(link).classList.add('link-active');
+      };
+
+      // Reset attributes on route change
+      setAttributes(0);      
+      
+      document.querySelector('.link-1').addEventListener('click', () => {
+          changeLinkActive('.link-1');
+          setAttributes(0);
       });
 
       document.querySelector('.link-2').addEventListener('click', () => {
-          document.querySelector('.link-active').classList.remove('link-active');
-          document.querySelector('.link-2').classList.add('link-active');
-          for(let i=0; i<8; i++) {
-              names[i].setAttribute('data-text', data[1][i].name);
-              image_containers[i].setAttribute('data-url', data[1][i].url);
-              descriptions[i].setAttribute('data-text', data[1][i].description);
-          };         
-          image_containers.forEach(image_container => {
-            let url = image_container.getAttribute('data-url');
-            image_container.style.backgroundImage ='url(' + url + ')';
-          });
+          changeLinkActive('.link-2');
+          setAttributes(1);
+      });
+
+      document.querySelector('.link-3').addEventListener('click', () => {
+          changeLinkActive('.link-3');
+          setAttributes(2);
+      });
+
+      document.querySelector('.link-4').addEventListener('click', () => {
+          changeLinkActive('.link-4');
+          setAttributes(0);
+      });
+
+      document.querySelector('.link-5').addEventListener('click', () => {
+          changeLinkActive('.link-5');
+          setAttributes(1);
+      });
+
+      document.querySelector('.link-6').addEventListener('click', () => {
+          changeLinkActive('.link-6');
+          setAttributes(2);
+      });
+
+      document.querySelector('.link-7').addEventListener('click', () => {
+          changeLinkActive('.link-7');
+          setAttributes(0);
+      });
+
+      document.querySelector('.link-8').addEventListener('click', () => {
+          changeLinkActive('.link-8');
+          setAttributes(1);
       });
   },
 };
