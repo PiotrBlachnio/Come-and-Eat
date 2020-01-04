@@ -45,6 +45,9 @@
                     <span class='bold'>mail@demolink.org </span>
                 </div>
             </div>
+            <div class="row mt-5">
+                <div class="image"></div>
+            </div>
         </div>
     </div> 
 </template>
@@ -118,4 +121,13 @@ export default {
         font-weight: 600;
     }
 
+    .image {
+        margin-top: 40px;
+        width: 1180px;
+        height: 300px;
+        background: url('https://ld-wp.template-help.com/rockthemes/21791/wp-content/plugins/jet-elements/assets/images/dummy-map.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: blur(1.5px);
+    }
 </style>
