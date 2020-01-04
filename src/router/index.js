@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import About from '../views/About.vue';
 import Menu from '../views/Menu.vue';
+import Gallery from '../views/Gallery.vue';
 
 Vue.use(VueRouter);
 
@@ -24,8 +25,13 @@ const routes = [
   },
   {
     path: '/menu',
-    name: 'about',
+    name: 'menu',
     component: Menu,
+  },
+  {
+    path: '/gallery',
+    name: 'gallery',
+    component: Gallery,
   }
 ];
 
