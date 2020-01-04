@@ -482,6 +482,7 @@ export default {
     .line-2{
         width: 69px;
     }
+    
     .dots {
         border-bottom: 1px dotted #25292d;
     }
