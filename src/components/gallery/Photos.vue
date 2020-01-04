@@ -63,9 +63,6 @@
                     <div class="image" data-url='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-2.png'></div>           
                 </div>
             </div>
-            <div class="row justify-content-center mt-5">
-                <img src='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/figure-1.png'/>
-            </div>
         </div>
     </div> 
 </template>

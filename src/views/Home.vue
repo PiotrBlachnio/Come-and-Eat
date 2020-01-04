@@ -2,7 +2,7 @@
   <div class="home">
     <Nav v-bind:current='current' />
     <Slider v-bind:current='active_button' v-bind:title='title' v-bind:image = 'image' />
-    <Introduction />
+    <Welcome />
     <Menu />
     <Gallery />
     <Reservation />
@@ -13,7 +13,7 @@
 <script>
 import Nav from '../components/Nav.vue';
 import Slider from '../components/home/Slider.vue';
-import Introduction from '../components/home/Introduction.vue';
+import Welcome from '../components/Welcome.vue';
 import Menu from '../components/home/Menu.vue';
 import Gallery from '../components/home/Gallery.vue';
 import Reservation from '../components/home/Reservation.vue';
@@ -24,7 +24,7 @@ export default {
   components: {
     Nav,
     Slider,
-    Introduction,
+    Welcome,
     Menu,
     Gallery,
     Reservation,

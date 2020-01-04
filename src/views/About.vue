@@ -15,7 +15,7 @@ import Nav from '../components/Nav.vue';
 import Description from '../components/about/Description.vue';
 import Counter from '../components/about/Counter.vue';
 import Team from '../components/about/Team.vue';
-import Banner from '../components/Banner.vue';
+import Banner from '../components/about/Banner.vue';
 import Comments from '../components/about/Comments.vue';
 import Footer from '../components/Footer.vue';
 

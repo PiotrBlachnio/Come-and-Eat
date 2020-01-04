@@ -2,7 +2,9 @@
   <div>
     <Nav v-bind:current='current' />
     <Photos />
-    <!-- <Footer v-bind:current='current'/> -->
+    <Welcome />
+    <Banner />
+    <Footer v-bind:current='current'/>
   </div>
 </template>
 
@@ -10,6 +12,8 @@
 import Nav from '../components/Nav.vue';
 import Footer from '../components/Footer.vue';
 import Photos from '../components/gallery/Photos.vue';
+import Welcome from '../components/Welcome.vue';
+import Banner from '../components/gallery/Banner.vue';
 
 export default {
   name: 'menu',
@@ -17,6 +21,8 @@ export default {
     Nav,
     Footer,
     Photos,
+    Welcome,
+    Banner,
   },
   data() {
     return {
