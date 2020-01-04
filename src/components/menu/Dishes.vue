@@ -8,28 +8,28 @@
             </div>
             <div class="row">
                 <div class="col text-center mt-4">
-                    <span class='link link-active'>
+                    <span class='link link-active link-1'>
                     Appetizers
                     </span>
-                    <span class='link'>
+                    <span class='link link-2'>
                         Dessert
                     </span>
-                    <span class='link'>
+                    <span class='link link-3'>
                         Drinks
                     </span>
-                    <span class='link'>
+                    <span class='link link-4'>
                         Main Dishes
                     </span>
-                    <span class='link'>
+                    <span class='link link-5'>
                         Panini Pasta
                     </span>
-                    <span class='link'>
+                    <span class='link link-6'>
                         Risotto
                     </span>
-                    <span class='link'>
+                    <span class='link link-7'>
                         Salads
                     </span>
-                    <span class='link'>
+                    <span class='link link-8'>
                         Sauce Soups
                     </span>
                 </div>             
@@ -102,10 +102,175 @@
 export default {
   name: 'Dishes',
   mounted: function() {
+      const data = [
+          [
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-1.png',
+                name: 'Grilled free salad',
+                description: 'Mesclun greens, pepperjack cheese, bacon, avocado, corn, tomato, cucumbers'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-2.png',
+                name: 'MASALA SPICED CHICKPEAS',
+                description: 'Chickpeas, rice, peppers'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-3.png',
+                name: 'ASIAN HOISIN PORK',
+                description: 'Pork, seasonal vegetables'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-4.png',
+                name: 'CHICKEN DORO WAT',
+                description: 'Chicken, ginger, eggs'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-5.png',
+                name: 'KUNG PAO CHICKEN',
+                description: 'Peppers, chicken, peanuts'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-6.png',
+                name: 'MANGO CHILI CHUTNEY',
+                description: 'Chilies, aromatic spices'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/portfolio-6.png',
+                name: 'SPICY FRIED RICE & BACON',
+                description: 'Bacon, rice, vegetables'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/portfolio-7.png',
+                name: 'GROUND BEEF STEW',
+                description: 'Crushed red pepper, ground beef, garlic'
+            },
+          ],
+          [
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/portfolio-6.png',
+                name: 'SPICY FRIED RICE & BACON',
+                description: 'Bacon, rice, vegetables'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-6.png',
+                name: 'MANGO CHILI CHUTNEY',
+                description: 'Chilies, aromatic spices'
+            },  
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-4.png',
+                name: 'CHICKEN DORO WAT',
+                description: 'Chicken, ginger, eggs'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-2.png',
+                name: 'MASALA SPICED CHICKPEAS',
+                description: 'Chickpeas, rice, peppers'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/portfolio-7.png',
+                name: 'GROUND BEEF STEW',
+                description: 'Crushed red pepper, ground beef, garlic'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-5.png',
+                name: 'KUNG PAO CHICKEN',
+                description: 'Peppers, chicken, peanuts'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-3.png',
+                name: 'ASIAN HOISIN PORK',
+                description: 'Pork, seasonal vegetables'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-1.png',
+                name: 'Grilled free salad',
+                description: 'Mesclun greens, pepperjack cheese, bacon, avocado, corn, tomato, cucumbers'
+            },       
+          ],
+          [
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-6.png',
+                name: 'MANGO CHILI CHUTNEY',
+                description: 'Chilies, aromatic spices'
+            },   
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/portfolio-6.png',
+                name: 'SPICY FRIED RICE & BACON',
+                description: 'Bacon, rice, vegetables'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-3.png',
+                name: 'ASIAN HOISIN PORK',
+                description: 'Pork, seasonal vegetables'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-2.png',
+                name: 'MASALA SPICED CHICKPEAS',
+                description: 'Chickpeas, rice, peppers'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-1.png',
+                name: 'Grilled free salad',
+                description: 'Mesclun greens, pepperjack cheese, bacon, avocado, corn, tomato, cucumbers'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/portfolio-7.png',
+                name: 'GROUND BEEF STEW',
+                description: 'Crushed red pepper, ground beef, garlic'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-5.png',
+                name: 'KUNG PAO CHICKEN',
+                description: 'Peppers, chicken, peanuts'
+            },
+            {
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-4.png',
+                name: 'CHICKEN DORO WAT',
+                description: 'Chicken, ginger, eggs'
+            },    
+          ],
+      ];
+
       const image_containers = document.querySelectorAll('.image');
+      const names = document.querySelectorAll('.name');
+      const descriptions = document.querySelectorAll('.description');
+      for(let i=0; i<8; i++) {
+          names[i].setAttribute('data-text', data[0][i].name);
+          image_containers[i].setAttribute('data-url', data[0][i].url);
+          descriptions[i].setAttribute('data-text', data[0][i].description);
+      };         
       image_containers.forEach(image_container => {
           let url = image_container.getAttribute('data-url');
           image_container.style.backgroundImage ='url(' + url + ')';
+      });
+      
+
+      document.querySelector('.link-1').addEventListener('click', () => {
+          document.querySelector('.link-active').classList.remove('link-active');
+          document.querySelector('.link-1').classList.add('link-active');
+          for(let i=0; i<8; i++) {
+              names[i].setAttribute('data-text', data[0][i].name);
+              image_containers[i].setAttribute('data-url', data[0][i].url);
+              descriptions[i].setAttribute('data-text', data[0][i].description);
+          };         
+          image_containers.forEach(image_container => {
+            let url = image_container.getAttribute('data-url');
+            image_container.style.backgroundImage ='url(' + url + ')';
+          });
+      });
+
+      document.querySelector('.link-2').addEventListener('click', () => {
+          document.querySelector('.link-active').classList.remove('link-active');
+          document.querySelector('.link-2').classList.add('link-active');
+          for(let i=0; i<8; i++) {
+              names[i].setAttribute('data-text', data[1][i].name);
+              image_containers[i].setAttribute('data-url', data[1][i].url);
+              descriptions[i].setAttribute('data-text', data[1][i].description);
+          };         
+          image_containers.forEach(image_container => {
+            let url = image_container.getAttribute('data-url');
+            image_container.style.backgroundImage ='url(' + url + ')';
+          });
       });
   },
 };
