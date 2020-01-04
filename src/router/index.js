@@ -4,6 +4,7 @@ import Home from '../views/Home.vue';
 import About from '../views/About.vue';
 import Menu from '../views/Menu.vue';
 import Gallery from '../views/Gallery.vue';
+import Contact from '../views/Contact.vue';
 
 Vue.use(VueRouter);
 
@@ -32,6 +33,11 @@ const routes = [
     path: '/gallery',
     name: 'gallery',
     component: Gallery,
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: Contact,
   }
 ];
 
