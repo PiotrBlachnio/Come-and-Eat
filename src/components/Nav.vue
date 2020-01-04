@@ -1,30 +1,30 @@
 <template>
     <div class='main'>
-        <b-nav>
+        <nav class='navbar navbar-expand-sm nav' >
             <router-link to='home'>
-                <b-img width=270px height=52px src="https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/logo-1.png" class='mt-3 logo'></b-img>
+                <img width=270px height=52px src="https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/logo-1.png" class='logo'></img>
             </router-link>
-            
-            <b-nav-item class='ml-auto item mt-4 md' to='home' :class="{'active':current=='home'}" data-aos="fade-right" data-aos-duration="1000">
-                    Home
-            </b-nav-item>    
-
-            <b-nav-item class='item mt-4' to='about' :class="{'active':current==='about'}" data-aos="fade-right" data-aos-duration="1000">
-                    About
-            </b-nav-item>  
-
-            <b-nav-item class='item mt-4' to='menu' :class="{'active':current==='menu'}" data-aos="fade-right" data-aos-duration="1000">
-                    Menu
-            </b-nav-item>
-
-            <b-nav-item class='item mt-4' to='gallery' :class="{'active':current==='gallery'}" data-aos="fade-right" data-aos-duration="1000">
-                    Gallery
-            </b-nav-item>  
-
-            <b-nav-item class='item mt-4 last-link' to='contact' :class="{'active':current==='contact'}" data-aos="fade-right" data-aos-duration="1000">
-                    Contact
-            </b-nav-item>    
-        </b-nav>
+            <button class='navbar-toggler' data-toggle='collapse' data-target='#navbarMenu'></button>
+            <div class='collapse navbar-collapse' id='navbarMenu'>
+                <ul class='navbar-nav ml-auto mt-2'>
+                    <li class='item' :class="{'active':current=='home'}" data-aos="fade-right" data-aos-duration="1000">
+                        <router-link to='home' class='link'>Home</router-link>         
+                    </li>
+                    <li class='item' :class="{'active':current==='about'}" data-aos="fade-right" data-aos-duration="1000">
+                        <router-link to='about' class='link'>About</router-link> 
+                    </li>
+                    <li class='item' :class="{'active':current==='menu'}" data-aos="fade-right" data-aos-duration="1000">
+                        <router-link to='menu' class='link'>Menu</router-link> 
+                    </li>
+                    <li class='item' :class="{'active':current==='gallery'}" data-aos="fade-right" data-aos-duration="1000">
+                        <router-link to='gallery' class='link'>Gallery</router-link> 
+                    </li>
+                    <li class='item last-item' :class="{'active':current==='contact'}" data-aos="fade-right" data-aos-duration="1000">
+                        <router-link to='contact' class='link'>Contact</router-link> 
+                    </li>
+                </ul>
+            </div>
+        </nav>      
     </div> 
 </template>
 
@@ -43,31 +43,22 @@ export default {
     }
 
     .item {
-        padding: 3px;
-    }
-
-    .item .nav-link {
-        color: #25292d;
-        font-size: 16px;
-        font-family: 'Rubik', sans-serif;
-        font-weight: 400;
-        text-transform: uppercase;
+        margin-left: 20px;
         line-height: 1.4em;
-        letter-spacing: 0em;
-        transition: all .1s;
+        transition: all .7s;
     }
 
     .nav-link:hover {
         cursor: default;
     }
 
-    .item .nav-link:hover, .active .nav-link {
+    .item:hover, .active {
         border-bottom: 2px solid #e44249;
         text-decoration: none;
         cursor: pointer;
     }
 
-    .last-link .nav-link{
+    .last-item {
         margin-right: 220px;
     }
 
@@ -79,4 +70,12 @@ export default {
         cursor: pointer;
     }
 
+    .link {
+        text-decoration: none;
+        color: #25292d;
+        font-size: 16px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
 </style>
