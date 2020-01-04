@@ -5,9 +5,10 @@
 </template>
 
 /*
-    TODO: Rem units
-    TODO: Animations
-    TODO: Reponsive navigation
+    TODO: Responsive Layout
+    TODO: Change navigation
+    TODO: SASS
+    TODO: Refactoring
 */
 
 <style>
