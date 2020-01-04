@@ -1,5 +1,6 @@
 <template>
     <div id='root'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <div class="container-fluid">
             <div class="row">
                 <div class="col text-center">
@@ -115,9 +116,9 @@ export default {
                 description: 'Chickpeas, rice, peppers'
             },
             {
-                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-3.png',
-                name: 'ASIAN HOISIN PORK',
-                description: 'Pork, seasonal vegetables'
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/portfolio-7.png',
+                name: 'GROUND BEEF STEW',
+                description: 'Crushed red pepper, ground beef, garlic'
             },
             {
                 url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-4.png',
@@ -140,9 +141,9 @@ export default {
                 description: 'Bacon, rice, vegetables'
             },
             {
-                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/portfolio-7.png',
-                name: 'GROUND BEEF STEW',
-                description: 'Crushed red pepper, ground beef, garlic'
+                url: 'https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/menu-img-3.png',
+                name: 'ASIAN HOISIN PORK',
+                description: 'Pork, seasonal vegetables'
             },
           ],
           [
@@ -231,6 +232,7 @@ export default {
           ],
       ];
 
+      const dishes = document.querySelectorAll('.dish');
       const image_containers = document.querySelectorAll('.image');
       const names = document.querySelectorAll('.name');
       const descriptions = document.querySelectorAll('.description');
@@ -257,47 +259,70 @@ export default {
           document.querySelector(link).classList.add('link-active');
       };
 
+      function addAnimations() {
+          dishes.forEach(dish => {
+              dish.classList.add('animated');
+              dish.classList.add('fadeIn');
+              dish.classList.add('faster');
+          });
+      };
+
       // Reset attributes on route change
-      setAttributes(0);      
+      setAttributes(0);
+      dishes.forEach(dish => {
+          dish.addEventListener('animationend', () => {
+                dish.classList.remove('animated');
+                dish.classList.remove('fadeIn');
+                dish.classList.remove('faster');
+            });
+      });
       
       document.querySelector('.link-1').addEventListener('click', () => {
           changeLinkActive('.link-1');
           setAttributes(0);
+          addAnimations();
       });
 
       document.querySelector('.link-2').addEventListener('click', () => {
           changeLinkActive('.link-2');
-          setAttributes(1);
+          setAttributes(1);   
+          addAnimations();
       });
 
       document.querySelector('.link-3').addEventListener('click', () => {
           changeLinkActive('.link-3');
           setAttributes(2);
+          addAnimations();
       });
 
       document.querySelector('.link-4').addEventListener('click', () => {
           changeLinkActive('.link-4');
           setAttributes(0);
+          addAnimations();
       });
 
       document.querySelector('.link-5').addEventListener('click', () => {
           changeLinkActive('.link-5');
           setAttributes(1);
+          addAnimations();
       });
 
       document.querySelector('.link-6').addEventListener('click', () => {
           changeLinkActive('.link-6');
           setAttributes(2);
+          addAnimations();
       });
 
       document.querySelector('.link-7').addEventListener('click', () => {
           changeLinkActive('.link-7');
           setAttributes(0);
+          addAnimations();
       });
 
       document.querySelector('.link-8').addEventListener('click', () => {
           changeLinkActive('.link-8');
           setAttributes(1);
+          addAnimations();
       });
   },
 };
@@ -305,6 +330,7 @@ export default {
 
 <style scoped>
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Rubik&display=swap');
 
     #root {
         margin-top: 100px;
