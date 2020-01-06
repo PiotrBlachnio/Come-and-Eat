@@ -91,16 +91,18 @@ export default {
 
     .link {
         margin-top: 10px;
+        cursor: pointer;
+        max-width: fit-content;
     }
 
     .link:hover, .active {
-        border-bottom: 2px solid #e44249;
-        cursor: pointer;
+        border-bottom: 2px solid #e44249;     
     }
 
     .burger {
-        margin-top: 25px;
-        margin-right: 20px;
+        margin-top: 10px;
+        margin-right: 30px;
+        margin-left: auto;
         cursor: pointer;
         display: none;
     }
@@ -112,22 +114,45 @@ export default {
         background-color: #25292d;
     }
 
+    @media screen and (max-width: 1424px) {
+        .nav-links {
+            width: 35%;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .nav-links {
+            width: 45%;
+            margin-right: 40px;
+        }
+    }
+
     @media screen and (max-width: 820px) {
         .burger {
             display: block;
-            position: absolute;
-            right: 0;
         }
 
-        .navbar {
+        .nav-links {
+            margin-right: 0;
             position: absolute;
             right: 0;
-            height: 20vh;
-            top: 1vh;        
+            height: 85vh;
+            top: 10vh;
+            z-index: 2;
+            background-color: #f3f5f7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            transform: translateX(100%);
         }
 
-        .link {
-            float: none;
+        .nav-links li {
+            opacity: 0;
+        }
+
+        .logo {
+            margin-left: 40px;
         }
     }
 </style>
