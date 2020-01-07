@@ -7,19 +7,19 @@
                 </router-link>
             </div>
             <ul class='nav-links'>
-                <li class='link' :class="{'active':current=='home'}" data-aos="fade-right" data-aos-duration="1000">
+                <li class='link' :class="{'active':current=='home'}" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                     <router-link to='home'>Home</router-link>         
                 </li>
-                <li class='link' :class="{'active':current==='about'}" data-aos="fade-right" data-aos-duration="1000">
+                <li class='link' :class="{'active':current==='about'}" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                     <router-link to='about'>About</router-link> 
                 </li>
-                <li class='link' :class="{'active':current==='menu'}" data-aos="fade-right" data-aos-duration="1000">
+                <li class='link' :class="{'active':current==='menu'}" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                     <router-link to='menu'>Menu</router-link> 
                 </li>
-                <li class='link' :class="{'active':current==='gallery'}" data-aos="fade-right" data-aos-duration="1000">
+                <li class='link' :class="{'active':current==='gallery'}" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                     <router-link to='gallery'>Gallery</router-link> 
                 </li>
-                <li class='link' :class="{'active':current==='contact'}" data-aos="fade-right" data-aos-duration="1000">
+                <li class='link' :class="{'active':current==='contact'}" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                     <router-link to='contact'>Contact</router-link> 
                 </li>
             </ul>       
@@ -50,13 +50,17 @@ export default {
           // Show navigation after clicking on burger
           burger.addEventListener('click', () => {
               nav.classList.toggle('nav-active');
+
+              // Animate links
               navLinks.forEach((link, index) => {
                 link.classList.toggle(`animate-${index}`); 
             });
-          });   
+
+            // Animate burger
+            burger.classList.toggle('toggle');
+          });        
       };
 
-      
       navSlide();
   },
 };
@@ -131,6 +135,7 @@ export default {
         height: 3px;
         margin: 5px;
         background-color: #25292d;
+        transition: all .3s ease;
     }
 
     @media screen and (max-width: 1424px) {
@@ -155,8 +160,8 @@ export default {
             margin-right: 0;
             position: absolute;
             right: 0;
-            height: 85vh;
-            top: 8vh;
+            height: 80vh;
+            top: 10vh;
             z-index: 2;
             background-color: #f3f5f7;
             display: flex;
@@ -201,23 +206,34 @@ export default {
     }
 
     .animate-0 {
-        animation-delay: .2s;
+        animation-delay: .1s;
     }
     
     .animate-1 {
-        animation-delay: .3s;
+        animation-delay: .2s;
     }
 
     .animate-2 {
-        animation-delay: .4s;
+        animation-delay: .3s;
     }
 
     .animate-3 {
-        animation-delay: .5s;
+        animation-delay: .4s;
     }
 
     .animate-4 {
-        animation-delay: .6s;
+        animation-delay: .5s;
     }
 
+    .toggle .line-1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line-2 {
+        opacity: 0;
+    }
+
+    .toggle .line-3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
 </style>
