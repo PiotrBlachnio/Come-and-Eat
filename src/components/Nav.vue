@@ -3,7 +3,7 @@
         <nav>
             <div class='logo'>
                 <router-link to='home' class='mt-2'>
-                    <img width=270px height=52px src="https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/logo-1.png" class='logo ml-auto'/>
+                    <img id='logo' width=270px height=52px src="https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/logo-1.png" class='logo ml-auto'/>
                 </router-link>
             </div>
             <ul class='nav-links'>
@@ -40,6 +40,24 @@ export default {
       return {
           menu_icon: require('../assets/img/menu_icon.png'),
       }
+  },
+  mounted: function() {
+      const navSlide = () => {
+          const burger = document.querySelector('.burger');
+          const nav = document.querySelector('.nav-links');
+          const navLinks = document.querySelectorAll('.nav-links li');
+
+          // Show navigation after clicking on burger
+          burger.addEventListener('click', () => {
+              nav.classList.toggle('nav-active');
+              navLinks.forEach((link, index) => {
+                link.classList.toggle(`animate-${index}`); 
+            });
+          });   
+      };
+
+      
+      navSlide();
   },
 };
 </script>
@@ -105,6 +123,7 @@ export default {
         margin-left: auto;
         cursor: pointer;
         display: none;
+        z-index: 3;
     }
 
     .burger div {
@@ -137,7 +156,7 @@ export default {
             position: absolute;
             right: 0;
             height: 85vh;
-            top: 10vh;
+            top: 8vh;
             z-index: 2;
             background-color: #f3f5f7;
             display: flex;
@@ -145,6 +164,7 @@ export default {
             align-items: center;
             width: 50%;
             transform: translateX(100%);
+            transition: transform .5s ease-in;
         }
 
         .nav-links li {
@@ -155,4 +175,49 @@ export default {
             margin-left: 40px;
         }
     }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    @keyframes slide {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .animate-0,
+    .animate-1,
+    .animate-2,
+    .animate-3,
+    .animate-4 {
+        animation: slide 2s ease backwards;
+    }
+
+    .animate-0 {
+        animation-delay: .2s;
+    }
+    
+    .animate-1 {
+        animation-delay: .3s;
+    }
+
+    .animate-2 {
+        animation-delay: .4s;
+    }
+
+    .animate-3 {
+        animation-delay: .5s;
+    }
+
+    .animate-4 {
+        animation-delay: .6s;
+    }
+
 </style>
