@@ -161,7 +161,7 @@ export default {
             position: absolute;
             right: 0;
             height: 80vh;
-            top: 10vh;
+            top: 9vh;
             z-index: 2;
             background-color: #f3f5f7;
             display: flex;
@@ -202,27 +202,27 @@ export default {
     .animate-2,
     .animate-3,
     .animate-4 {
-        animation: slide 2s ease backwards;
+        animation: slide 1.5s ease backwards;
     }
 
     .animate-0 {
-        animation-delay: .1s;
+        animation-delay: .01s;
     }
     
     .animate-1 {
-        animation-delay: .2s;
+        animation-delay: .1s;
     }
 
     .animate-2 {
-        animation-delay: .3s;
+        animation-delay: .2s;
     }
 
     .animate-3 {
-        animation-delay: .4s;
+        animation-delay: .3s;
     }
 
     .animate-4 {
-        animation-delay: .5s;
+        animation-delay: .4s;
     }
 
     .toggle .line-1 {

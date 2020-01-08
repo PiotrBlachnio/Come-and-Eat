@@ -2,7 +2,8 @@
     <div id='slider' :style="{ backgroundImage: image}">
         <div class='container-fluid'>
             <div class="row justify-content-center">               
-            <div class="col-9 title" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+            <div class="col-xl-9 col-lg-10 col-md-11 col-sm-12 title" >
+                <!-- data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" -->
                 <span class='title-text'>
                     {{title[0]}}<br><br>
                     {{title[1]}}<br><br>
@@ -12,12 +13,12 @@
             </div>            
             </div>
             <div class="row justify-content-center mt-4">
-                <div class="col-9">
+                <div class="col-xl-9 col-lg-10 col-md-11 col-sm-12">
                     <button class='slider-button'>Order Catering Online</button>
                 </div>
             </div>
             <div class="row justify-content-center mt-4">
-                <div class="col-9">
+                <div class="col-xl-9 col-lg-10 col-md-11 col-sm-12">
                     <button class='sp-button' :class="{'active':current=='1'}" v-on:click='change_slide(1)'></button>
                     <button class='sp-button' :class="{'active':current=='2'}" v-on:click='change_slide(2)'></button>
                     <button class='sp-button' :class="{'active':current=='3'}" v-on:click='change_slide(3)'></button>
@@ -68,6 +69,12 @@ export default {
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     @keyframes fade {
         from {
             opacity: 0;
@@ -81,8 +88,9 @@ export default {
        width: 100vw;
        height: 90vh;
        background-repeat: no-repeat;
-       background-size: cover;
        overflow: hidden;
+       background-position-x: center;
+       background-size: cover;
    }
 
    .title {       
@@ -93,7 +101,7 @@ export default {
         line-height: 20px;
         color: #25292d;
         font-family: "Rubik", Sans-serif;
-        font-size: 100px;
+        font-size: 9vmin;
         font-weight: 300;
         text-transform: uppercase;  
     }
@@ -141,6 +149,12 @@ export default {
         animation-name: fade;
         animation-duration: 2s;
         animation-fill-mode: forwards;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .title {
+            padding-top: 40px;
+        }
     }
 
 </style>
