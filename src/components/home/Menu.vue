@@ -4,17 +4,17 @@
         <div class="row justify-content-center">
             <div class="col-5 nopadding justify-content-center" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                 <div class="row justify-content-center">
-                    <div class="col-6 ml-5 nopadding mt-5">
+                    <div class="col-xl-6 col-12 ml-5 nopadding mt-5">
                         <div class="title">Main Menu</div>
                     </div>            
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-6 ml-5 nopadding">
+                    <div class="col-xl-6 col-12 ml-5 nopadding">
                         <div class="line"></div>
                     </div>               
                 </div>
                 <div class='row justify-content-center mt-4'>
-                    <div class="col-6 ml-5">
+                    <div class="col-xl-6 col-12 ml-5">
                         <div class="row">
                             <div class="col-auto dish-title nopadding">
                                 <span class='dish-name'>Garlic Shrimp & Tonnarelli Pasta</span>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class='row justify-content-center mt-4'>
-                    <div class="col-6 ml-5">
+                    <div class="col-xl-6 col-12 ml-5">
                         <div class="row">
                             <div class="col-auto dish-title nopadding">
                                 <span class='dish-name b'>Grilled hanger steak</span>
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class='row justify-content-center mt-4'>
-                    <div class="col-6 ml-5">
+                    <div class="col-xl-6 col-12 ml-5">
                         <div class="row">
                             <div class="col-auto dish-title nopadding">
                                 <span class='dish-name b'>Pan roasted 'florida keys' mahi mahi</span>
@@ -71,14 +71,14 @@
                     </div>
                 </div>
                 <div class='row justify-content-center mt-4'>
-                    <div class="col-6 ml-5">
+                    <div class="col-xl-6 col-12 ml-5">
                         <div class="row">
                             <div class="col-auto dish-title nopadding">
                                 <span class='dish-name b'>Grilled free range chicken salad</span>
                             </div>
                             <div class="col nopadding dots">
                             </div>
-                            <div class="col-2 nopadding">
+                            <div class="col nopadding">
                                 <span class='cost'>$19.99</span><br>   
                             </div>                                                                            
                         </div>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
                 <div class='row justify-content-center mt-4'>
-                    <div class="col-6 ml-5">
+                    <div class="col-xl-6 col-12 ml-5">
                         <div class="row">
                             <div class="col-auto dish-title nopadding">
                                 <span class='dish-name b'>Grilled bbq baby back ribs</span>
@@ -109,13 +109,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 nopadding" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+            <div class="col-xl-4 nopadding text-center mt-5" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
                 <img src='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/home-img-1.png' width='571' height='572'/>
             </div>
         </div>
 
         <div class="row justify-content-center mt-5">
-            <div class="col-5 nopadding text-right" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+            <div class="col-xl-4 nopadding text-center" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                 <img src='https://ld-wp.template-help.com/rockthemes/21791/wp-content/uploads/2018/06/home-img-2.png' width='571' height='572'/>
             </div>
             <div class="col-6 nopadding" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
@@ -125,12 +125,12 @@
                     </div>            
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-6 ml-5 nopadding">
+                    <div class="col-xl-6 col-12 ml-5 nopadding">
                         <div class="line-2"></div>
                     </div>               
                 </div>
                 <div class='row justify-content-center mt-4'>
-                    <div class="col-6 ml-5">
+                    <div class="col-xl-6 col-12 ml-5">
                         <div class="row">
                             <div class="col-auto dish-title nopadding">
                                 <span class='dish-name'>Chicken liver parfait</span>
@@ -149,7 +149,7 @@
                     </div>
                 </div>
                 <div class='row justify-content-center mt-4'>
-                    <div class="col-6 ml-5">
+                    <div class="col-xl-6 col-12 ml-5">
                         <div class="row">
                             <div class="col-auto dish-title nopadding">
                                 <span class='dish-name b'>Italian tasting platter</span>
@@ -168,7 +168,7 @@
                     </div>
                 </div>
                 <div class='row justify-content-center mt-4'>
-                    <div class="col-6 ml-5">
+                    <div class="col-xl-6 col-12 ml-5">
                         <div class="row">
                             <div class="col-auto dish-title nopadding">
                                 <span class='dish-name b'>Pan roasted 'florida keys' mahi mahi</span>
@@ -187,7 +187,7 @@
                     </div>
                 </div>
                 <div class='row justify-content-center mt-4'>
-                    <div class="col-6 ml-5">
+                    <div class="col-xl-6 col-12 ml-5">
                         <div class="row">
                             <div class="col-auto dish-title nopadding">
                                 <span class='dish-name b'>Crab Congee</span>
@@ -206,7 +206,7 @@
                     </div>
                 </div>
                 <div class='row justify-content-center mt-4'>
-                    <div class="col-6 ml-5">
+                    <div class="col-xl-6 col-12 ml-5">
                         <div class="row">
                             <div class="col-auto dish-title nopadding">
                                 <span class='dish-name b'>Salt and pepper calamari</span>
@@ -543,5 +543,16 @@ export default {
 
     .button:hover {
         background-color: #e44249;
+    }
+
+     @media screen and (max-width: 1200px) {
+        .title {
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .line, .line-2 {
+            margin: auto;
+        }
     }
 </style>

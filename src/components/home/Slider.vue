@@ -2,8 +2,7 @@
     <div id='slider' :style="{ backgroundImage: image}">
         <div class='container-fluid'>
             <div class="row justify-content-center">               
-            <div class="col-xl-9 col-lg-10 col-md-11 col-sm-12 title" >
-                <!-- data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" -->
+            <div class="col-xl-9 col-lg-10 col-md-11 col-sm-12 title" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                 <span class='title-text'>
                     {{title[0]}}<br><br>
                     {{title[1]}}<br><br>
