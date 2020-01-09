@@ -14,4 +14,4 @@ Restaurant site with description, gallery, menu and contact. The website was bui
 1. Push to the branch (git push origin feature/fooBar)
 1. Create a new Pull Request
 ## Check it by yourself
-[Netlify](https://polar-chamber-93231.herokuapp.com/user/register)
+[Netlify](https://come-and-eat.netlify.com/#/home)
