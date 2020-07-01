@@ -4,13 +4,6 @@
   </div>
 </template>
 
-/*
-    TODO: Responsive Layout
-    TODO: Change navigation
-    TODO: SASS
-    TODO: Refactoring
-*/
-
 <style>
   body {
     overflow-x: hidden;
