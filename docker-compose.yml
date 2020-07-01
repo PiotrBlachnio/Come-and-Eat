@@ -1,0 +1,8 @@
+version: '3'
+services:
+    web:
+        container_name: come-and-eat-web
+        restart: always
+        build: .
+        ports:
+            - '9001:8080'
