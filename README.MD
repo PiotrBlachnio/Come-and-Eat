@@ -1,4 +1,4 @@
-# Come&Eat
+# Come & Eat
 Restaurant site with description, gallery, menu and contact. The website was built using VueJS & Bootstrap. The design idea was taken from the TemplateMontster.
 
 ## Technologies used
@@ -8,6 +8,36 @@ Restaurant site with description, gallery, menu and contact. The website was bui
 * Vue.js
 * Bootstrap 4
 * AOS
+
+## Running on docker
+```
+git clone https://github.com/PiotrBlachnio/Come-and-Eat.git
+```
+
+```
+cd Chat-App
+```
+
+```
+docker-compose up
+```
+
+## Running on localhost
+```
+git clone https://github.com/PiotrBlachnio/Come-and-Eat.git
+```
+
+```
+cd Come-and-Eat
+```
+
+```
+npm install
+```
+
+```
+npm run serve
+```
 
 ## Contributing
 1. Fork it (https://github.com/PiotrBlachnio/Come-and-Eat/fork)
