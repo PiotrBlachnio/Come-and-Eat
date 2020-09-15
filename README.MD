@@ -15,7 +15,7 @@ git clone https://github.com/PiotrBlachnio/Come-and-Eat.git
 ```
 
 ```
-cd Chat-App
+cd Come-and-Eat
 ```
 
 ```
