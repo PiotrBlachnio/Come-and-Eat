@@ -47,4 +47,4 @@ npm run serve
 1. Create a new Pull Request
 
 ## Check it by yourself
-[Netlify](https://come-and-eat.netlify.com/#/home)
+[Netlify](https://pathondb.netlify.app/auth) - There might be some latency in the first request due to deployment server on Heroku
